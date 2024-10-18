@@ -3,7 +3,11 @@ import ProjectImageTwo from './assets/image (4).png'
 import ProjectImageThree from './assets/image (3).png'
 import ProjectImageFour from './assets/image (4).png'
 
-export default function RecentProject () {
+const handleColor = () => {
+    alert('This item is clicked')
+}
+
+export default function RecentProject() {
     return (
         <section className='md:w-8/12 mx-auto w-full relative'>
             <div className="md:my-10 md:m-0 m-4 flex flex-col justify-center">
@@ -22,17 +26,17 @@ export default function RecentProject () {
             <div className="content">
                 <nav className="flex items-center justify-center">
                     <ul className="flex justify-center items-center md:gap-9 gap-5 text-green font-velkorn flex-wrap px-4 text-lg font-semibold">
-                        <li className="hover:border-b-2 hover:border-red-300 hover: cursor-pointer">All</li>
-                        <li className="hover:border-b-2 hover:border-red-300 hover: cursor-pointer">Branding</li>
-                        <li className="hover:border-b-2 hover:border-red-300 hover: cursor-pointer">Photography</li>
-                        <li className="hover:border-b-2 hover:border-red-300 hover: cursor-pointer">Fashion</li>
-                        <li className="hover:border-b-2 hover:border-red-300 hover: cursor-pointer">Product</li>
+                        <li className="border-b-2 border-red-300 cursor-pointer" onClick={handleColor}>All</li>
+                        <li className="hover:border-b-2 hover:border-red-300 hover:cursor-pointer" onClick={handleColor}>Branding</li>
+                        <li className="hover:border-b-2 hover:border-red-300 hover:cursor-pointer" onClick={handleColor}>Photography</li>
+                        <li className="hover:border-b-2 hover:border-red-300 hover:cursor-pointer" onClick={handleColor}>Fashion</li>
+                        <li className="hover:border-b-2 hover:border-red-300 hover:cursor-pointer" onClick={handleColor}>Product</li>
                     </ul>
                 </nav>
                 <div className="grid grid-cols-1 md:grid-cols-2 md:my-10 my-5 gap-y-5 relative p-2">
                     <div>
                         <div className="relative"><img className="" src={ProjectImageOne} alt="" /></div>
-                        <div className="absolute bg-[#00413D] p-4 w-[45%] text-white z-10 inset-x-0 top-[28rem] font-semibold font-velkorn">Motion Graphics
+                        <div className="absolute bg-[#00413D] p-4 w-[45%] text-white z-10 top-[28rem] font-semibold font-velkorn">Motion Graphics
                             <p className="font-normal">Website</p>
                         </div>
                     </div>

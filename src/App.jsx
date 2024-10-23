@@ -1,5 +1,6 @@
 import CardsSection from "./CardSection"
 import Footer from "./Components/Footer"
+import Review from "./Components/ReviewSection/Review"
 import HeroSection from "./HeroSection"
 import NavBar from "./NavBar"
 import Projects from "./Project"
@@ -16,6 +17,8 @@ function App() {
     <RadialProgress></RadialProgress>
     <Projects></Projects>
     <RecentProject></RecentProject>
+    <Review></Review>
+    <Projects></Projects>
     <Footer></Footer>
     </>
   )

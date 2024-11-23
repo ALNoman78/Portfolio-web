@@ -1,4 +1,4 @@
-import ProfileImage from './assets/profile.png'
+import ProfileImage from './assets/moule.jpg'
 
 export default function HeroSection() {
 

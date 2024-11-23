@@ -2,12 +2,17 @@ import ProjectImageOne from './assets/image (3).png'
 import ProjectImageTwo from './assets/image (4).png'
 import ProjectImageThree from './assets/image (3).png'
 import ProjectImageFour from './assets/image (4).png'
+import { useState } from 'react'
 
-const handleColor = () => {
-    alert('This item is clicked')
-}
+
 
 export default function RecentProject() {
+
+    const [active, setActive] = useState(true)
+
+    const handleColor = () => {
+        setActive(!active)
+    }
     return (
         <section className='md:w-8/12 mx-auto w-full relative'>
             <div className="md:my-10 md:m-0 m-4 flex flex-col justify-center">
@@ -26,13 +31,13 @@ export default function RecentProject() {
             <div className="content">
                 <nav className="flex items-center justify-center">
                     <ul className="flex justify-center items-center md:gap-9 gap-5 text-green font-velkorn flex-wrap px-4 text-lg font-semibold">
-                        <li className="border-b-2 border-red-300 cursor-pointer" onClick={handleColor}>All</li>
-                        <li className="hover:border-b-2 hover:border-red-300 hover:cursor-pointer" onClick={handleColor}>Branding</li>
-                        <li className="hover:border-b-2 hover:border-red-300 hover:cursor-pointer" onClick={handleColor}>Photography</li>
-                        <li className="hover:border-b-2 hover:border-red-300 hover:cursor-pointer" onClick={handleColor}>Fashion</li>
-                        <li className="hover:border-b-2 hover:border-red-300 hover:cursor-pointer" onClick={handleColor}>Product</li>
-                    </ul>
-                </nav>
+                        <li onClick={handleColor} className={active ? 'border-b-2 border-red-300 cursor-pointer' : 'border-none'}>All</li>
+                        <li onClick={handleColor} className={active ? 'border-b-2 border-red-300 cursor-pointer' : 'border-none'} >Branding</li>
+                        <li onClick={handleColor} className={active ? 'border-b-2 border-red-300 cursor-pointer' : 'border-none'}>Photography</li>
+                        <li onClick={handleColor} className={active ? 'border-b-2 border-red-300 cursor-pointer' : 'border-none'}>Fashion</li>
+                        <li onClick={handleColor} className={active ? 'border-b-2 border-red-300 cursor-pointer' : 'border-none'}>Product</li>
+                    </ul >
+                </nav >
                 <div className="grid grid-cols-1 md:grid-cols-2 md:my-10 my-5 gap-y-5 relative p-2">
                     <div>
                         <div className="relative"><img className="" src={ProjectImageOne} alt="" /></div>
@@ -59,7 +64,7 @@ export default function RecentProject() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     )
 }

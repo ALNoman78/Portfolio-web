@@ -51,18 +51,6 @@ export default function RecentProject() {
                             <p className="font-normal">IOS App</p>
                         </div>
                     </div>
-                    <div>
-                        <div className="relative"><img src={ProjectImageThree} alt="" /></div>
-                        <div className="absolute bg-[#00413D] p-4 w-[45%] text-white bottom-0 font-semibold font-velkorn">E-Learning App
-                            <p className="font-normal">IOS App</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="relative"><img src={ProjectImageFour} alt="" /></div>
-                        <div className="absolute bg-[#00413D] p-4 w-[45%] text-white bottom-0 font-semibold font-velkorn">E-Learning App
-                            <p className="font-normal">IOS App</p>
-                        </div>
-                    </div>
                 </div>
             </div >
         </section >

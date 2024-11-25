@@ -41,7 +41,7 @@ export default function CardsSection () {
                         <div>
                             <img src={SecondIcon} alt="" />
                         </div>
-                        <h2 className="card-title font-velkorn md:mt-4 font-extrabold">Ui/Ux Design</h2>
+                        <h2 className="card-title font-velkorn md:mt-4 font-extrabold">App Developer</h2>
                         <p className="my-4 text-green">Dolor repellendus tempo ribus aue
                             quibusdam offi ciis debitis rerum na
                             aibus minima veniam.</p>
@@ -59,7 +59,7 @@ export default function CardsSection () {
                         <div>
                             <img src={ThirdIcon} alt="" />
                         </div>
-                        <h2 className="card-title font-velkorn md:mt-4 font-extrabold">Ui/Ux Design</h2>
+                        <h2 className="card-title font-velkorn md:mt-4 font-extrabold">Web Developer</h2>
                         <p className="my-4 text-green">Dolor repellendus tempo ribus aue
                             quibusdam offi ciis debitis rerum na
                             aibus minima veniam.</p>
